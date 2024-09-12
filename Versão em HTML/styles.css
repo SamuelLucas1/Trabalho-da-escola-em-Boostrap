@@ -1,0 +1,120 @@
+/* Estilo básico para o body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para o header */
+  header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+ /* Centralizando a área de texto */
+ .typing-text {
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+  font-size: 2em;
+  text-align: center; /* Centraliza horizontalmente */
+  margin-top: 50px; /* Espaço acima do texto */
+  color: #333; /* Cor do texto */
+  white-space: nowrap; /* Garante que o texto fique em uma linha */
+}
+  
+  /* Animação de digitação */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* Animação de piscar o cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #000; }
+  }
+
+  .lorem-text {
+    font-family: 'Poppins', sans-serif; /* Fonte usada */
+    font-size: 1.1em; /* Tamanho um pouco maior para legibilidade */
+    line-height: 1.6; /* Altura da linha para dar mais espaçamento entre linhas */
+    color: #4a4a4a; /* Cor suave e amigável para leitura */
+    max-width: 800px; /* Limita a largura do texto para evitar longas linhas */
+    margin: 0 auto; /* Centraliza o texto na página */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Fundo levemente cinza */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o texto */
+  }
+  
+  .lorem-text p {
+    margin-bottom: 1.5em; /* Espaçamento entre parágrafos */
+  }
+  
+  .lorem-text strong {
+    color: #333; /* Cor mais escura para negrito */
+  }
+  
+  .lorem-text em {
+    color: #007bff; /* Cor diferente para itálico */
+  }
+  
+  
+  /* Botão de subir */
+  .scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    opacity: 0.7;
+  }
+  
+  .scroll-up-button:hover {
+    opacity: 1;
+  }
+  
+  .scroll-up-button:active {
+    transform: scale(0.9);
+  }
+  
+  /* Estilo do footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    margin: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icon:hover {
+    background-color: #0056b3;
+  }  
